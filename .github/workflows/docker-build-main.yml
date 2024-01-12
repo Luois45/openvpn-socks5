@@ -45,7 +45,7 @@ jobs:
       - name: Update Hub Description
         uses: peter-evans/dockerhub-description@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: luois45
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           repository: luois45/skinbaronbot_v2
           readme-filepath: ./DockerHub-README.md
