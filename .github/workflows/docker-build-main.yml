@@ -39,13 +39,13 @@ jobs:
           context: .
           push: true
           tags: |
-            luois45/skinbaronbot_v2:latest
-            ghcr.io/luois45/skinbaronbot_v2:latest
+            luois45/openvpn-socks5:latest
+            ghcr.io/luois45/openvpn-socks5:latest
 
       - name: Update Hub Description
         uses: peter-evans/dockerhub-description@v2
         with:
           username: luois45
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: luois45/skinbaronbot_v2
+          repository: luois45/openvpn-socks5
           readme-filepath: ./DockerHub-README.md
